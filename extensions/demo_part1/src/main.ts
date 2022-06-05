@@ -5,9 +5,14 @@ import packageJSON from "../package.json";
  * @zh 为扩展的主进程的注册方法
  */
 export const methods: { [key: string]: (...any: any) => any } = {
-  open_panel() {
-    Editor.Panel.open(packageJSON.name);
-  },
+	open_panel() {
+		Editor.Panel.open(packageJSON.name);
+		setTimeout(async () => {
+			console.log("与渲染进程通信");
+			let result = await Editor.Message.request(packageJSON.name, "test");
+			console.log("渲染进程返回", result);
+		}, 3000);
+	},
 };
 
 /**

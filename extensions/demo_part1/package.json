@@ -1,61 +1,66 @@
 {
-    "package_version": 2,
-    "version": "1.0.0",
-    "name": "demo_part1",
-    "description": "i18n:demo_part1.description",
-    "main": "./dist/main.js",
-    "dependencies": {
-        "vue": "^3.1.4",
-        "fs-extra": "^10.0.0"
-    },
-    "devDependencies": {
-        "@types/node": "^16.0.1",
-        "@types/fs-extra": "^9.0.5",
-        "typescript": "^4.3.4"
-    },
-    "panels": {
-        "default": {
-            "title": "demo_part1 Default Panel",
-            "type": "dockable",
-            "main": "dist/panels/default/script",
-            "size": {
-                "min-width": 400,
-                "min-height": 300,
-                "width": 1024,
-                "height": 600
-            }
-        }
-    },
-    "contributions": {
-        "menu": [
-            {
-                "path": "i18n:menu.panel/demo_part1",
-                "label": "i18n:demo_part1.open_panel",
-                "message": "open-panel"
-            },
-            {
-                "path": "i18n:menu.develop/demo_part1",
-                "label": "i18n:demo_part1.send_to_panel",
-                "message": "send-to-panel"
-            }
-        ],
-        "messages": {
-            "open-panel": {
-                "methods": [
-                    "open_panel"
-                ]
-            },
-            "send-to-panel": {
-                "methods": [
-                    "default.hello"
-                ]
-            }
-        }
-    },
-    "author": "Cocos Creator",
-    "editor": ">=3.3.2",
-    "scripts": {
-        "build": "tsc -b",
-        "watch": "tsc -w"
-    }
+	"package_version": 2,
+	"version": "1.0.0",
+	"name": "demo_part1",
+	"description": "i18n:demo_part1.description",
+	"main": "./dist/main.js",
+	"panels": {
+		"default": {
+			"title": "demo_part1 Default Panel",
+			"type": "dockable",
+			"main": "dist/panels/default/script",
+			"size": {
+				"min-width": 400,
+				"min-height": 300,
+				"width": 1024,
+				"height": 600
+			}
+		}
+	},
+	"contributions": {
+		"menu": [
+			{
+				"path": "i18n:menu.panel/demo_part1",
+				"label": "i18n:demo_part1.open_panel",
+				"message": "open-panel"
+			},
+			{
+				"path": "i18n:menu.develop/demo_part1",
+				"label": "i18n:demo_part1.send_to_panel",
+				"message": "send-to-panel"
+			}
+		],
+		"messages": {
+			"open-panel": {
+				"methods": [
+					"open_panel"
+				]
+			},
+			"send-to-panel": {
+				"methods": [
+					"default.hello"
+				]
+			},
+			"test": {
+				"methods": [
+					"default.test"
+				]
+			}
+		}
+	},
+	"author": "Cocos Creator",
+	"editor": ">=3.3.2",
+	"scripts": {
+		"build": "tsc -b",
+		"watch": "tsc -w"
+	},
+	"dependencies": {
+		"vue": "^3.1.4",
+		"fs-extra": "^10.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^16.0.1",
+		"@types/fs-extra": "^9.0.5",
+		"typescript": "^4.3.4"
+	}
 }

@@ -12,16 +12,20 @@ const package_json_1 = __importDefault(require("../package.json"));
  */
 exports.methods = {
     open_panel() {
+        console.log("与渲染进程通信");
         Editor.Panel.open(package_json_1.default.name);
+        setTimeout(async () => {
+            console.log("与渲染进程通信2");
+            let result = await Editor.Message.request(package_json_1.default.name, "test");
+            console.log("渲染进程返回", result);
+        }, 3000);
     },
 };
 /**
  * @en Hooks triggered after extension loading is complete
  * @zh 扩展加载完成后触发的钩子
  */
-const load = function () {
-    console.log("main load");
-};
+const load = function () { };
 exports.load = load;
 /**
  * @en Hooks triggered after extension uninstallation is complete

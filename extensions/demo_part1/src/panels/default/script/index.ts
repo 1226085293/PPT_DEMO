@@ -27,6 +27,9 @@ module.exports = Editor.Panel.define({
 				console.log("[cocos-panel-html.default]: hello");
 			}
 		},
+		test() {
+			return "test result";
+		},
 	},
 	ready() {
 		if (this.$.text) {
