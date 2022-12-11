@@ -51,7 +51,7 @@ const option: vue.Component = {
 		]);
 
 		child_process.exec(
-			`node  http-server ${path.join(config.path_s, "res/web-mobile")} -c-1 --cors`,
+			`node  http-server ${path.join(config.path_s, "res/web-desktop")} -c-1 --cors`,
 			{ cwd: path.join(config.path_s, "node_modules/http-server/bin") }
 		);
 	},

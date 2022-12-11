@@ -1,6 +1,8 @@
-import { readFileSync } from "fs-extra";
+import { readFileSync } from "fs";
 import { join } from "path";
 import { createApp } from "vue";
+//@ts-ignore
+import packageJSON from "../../../../package.json";
 
 module.exports = Editor.Panel.define({
 	listeners: {
@@ -49,9 +51,14 @@ module.exports = Editor.Panel.define({
 				},
 				methods: {
 					addition() {
+						let temp_n = 0;
+						for (let k_n = 0; k_n < 1000000000; ++k_n) {
+							temp_n++;
+						}
 						this.counter += 1;
 					},
 					subtraction() {
+						Editor.Message.send(packageJSON.name, "main-test");
 						this.counter -= 1;
 					},
 				},

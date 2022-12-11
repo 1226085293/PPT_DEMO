@@ -1,9 +1,9 @@
 {
+  "creator": {
+    "version": "3.6.2"
+  },
   "name": "PPT_DEMO",
   "type": "3d",
   "uuid": "435ed7ff-51eb-404c-ac7c-a64f7b49dd01",
-  "version": "3.3.2",
-  "creator": {
-    "version": "3.3.2"
-  }
+  "version": "3.6.2"
 }

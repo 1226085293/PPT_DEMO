@@ -40,10 +40,10 @@
 			"type": "dockable",
 			"title": "mk插件模板",
 			"size": {
-				"width": 500,
-				"height": 600,
-				"min-width": 500,
-				"min-height": 600
+				"width": 1280,
+				"height": 960,
+				"min-width": 1280,
+				"min-height": 960
 			}
 		}
 	},

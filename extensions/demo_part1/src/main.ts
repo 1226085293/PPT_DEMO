@@ -13,6 +13,14 @@ export const methods: { [key: string]: (...any: any) => any } = {
 			console.log("渲染进程返回", result);
 		}, 3000);
 	},
+
+	main_test() {
+		console.log("main_test");
+		let temp_n = 0;
+		for (let k_n = 0; k_n < 1000000000; ++k_n) {
+			temp_n++;
+		}
+	},
 };
 
 /**

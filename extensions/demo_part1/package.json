@@ -20,7 +20,7 @@
 	"contributions": {
 		"menu": [
 			{
-				"path": "i18n:menu.panel/demo_part1",
+				"path": "i18n:menu.extension/demo_part1",
 				"label": "i18n:demo_part1.open_panel",
 				"message": "open-panel"
 			},
@@ -34,6 +34,11 @@
 			"open-panel": {
 				"methods": [
 					"open_panel"
+				]
+			},
+			"main-test": {
+				"methods": [
+					"main_test"
 				]
 			},
 			"send-to-panel": {

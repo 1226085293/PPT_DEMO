@@ -1,0 +1,46 @@
+{
+    "importBase": "import",
+    "nativeBase": "native",
+    "name": "resources",
+    "deps": [],
+    "uuids": [
+        "bc4f48b3-968c-4457-97d7-96c2ee89d900",
+        "bc4f48b3-968c-4457-97d7-96c2ee89d900@6c48a",
+        "bc4f48b3-968c-4457-97d7-96c2ee89d900@f9941"
+    ],
+    "paths": {
+        "bc4f48b3-968c-4457-97d7-96c2ee89d900": [
+            "图片1",
+            "cc.ImageAsset"
+        ],
+        "bc4f48b3-968c-4457-97d7-96c2ee89d900@6c48a": [
+            "图片1/texture",
+            "cc.Texture2D",
+            1
+        ],
+        "bc4f48b3-968c-4457-97d7-96c2ee89d900@f9941": [
+            "图片1/spriteFrame",
+            "cc.SpriteFrame",
+            1
+        ]
+    },
+    "scenes": {},
+    "packs": {},
+    "versions": {
+        "import": [
+            "bc4f48b3-968c-4457-97d7-96c2ee89d900",
+            "a2533",
+            "bc4f48b3-968c-4457-97d7-96c2ee89d900@6c48a",
+            "46a7d",
+            "bc4f48b3-968c-4457-97d7-96c2ee89d900@f9941",
+            "65454"
+        ],
+        "native": [
+            "bc4f48b3-968c-4457-97d7-96c2ee89d900",
+            "40a21"
+        ]
+    },
+    "redirect": [],
+    "debug": true,
+    "extensionMap": {}
+}
